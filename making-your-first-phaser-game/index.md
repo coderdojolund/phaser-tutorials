@@ -1,6 +1,6 @@
 # Del 1 &ndash; Inledning
 
-[Engelskt original](view-source:http://phaser.io/tutorials/making-your-first-phaser-game/index)
+[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index):
 _By [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm)_ on 7th December 2013   [@photonstorm](https://twitter.com/photonstorm) 
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/tutorial_header.png)
