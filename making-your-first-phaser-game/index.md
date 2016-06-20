@@ -41,8 +41,8 @@ function update() {
 }
 ```
 Rad 1 blåser liv i Phaser genom att skapa en instans av objektet *Phaser.Game* och sparar den i en lokal variabel som heter 
-'game'.
-Att kalla variabeln 'game' är brukligt, men inget krav, och du kommer att se den i Phaser-exemplen.
+*game*.
+Att kalla variabeln *game* är vanligast, men inget krav, och du kommer att se den i Phaser-exemplen.
 
 De första två parametrarna är bredden och höjden på *canvas*-elementet som Phaser skapar. I det här fallet 800 x 600 pixlar.
 Din spelvärld kan ha vilken storlek som helst, men detta är upplösningen som spelet kommer att visas i. Den tredje parametern kan vara antingen *Phaser.CANVAS*, *Phaser.WEBGL* eller *Phaser.AUTO*.
