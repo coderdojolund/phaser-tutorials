@@ -53,3 +53,5 @@ Den fjäde parametern är en tom sträng, som är id på det DOM-element där du
 ## Ordlista
 * **DOM-element** `<head>`, `<body>` osv. som är byggstenarna i HTML 
 * **rit-kontext** En grafisk rityta på en webbsida, t.ex. `<canvas>`
+
+[Utskriftsversion](https://github.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
