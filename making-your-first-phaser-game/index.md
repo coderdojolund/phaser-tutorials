@@ -1,26 +1,31 @@
-# Del 1 -- Inledning
+# Del 1 &ndash; Inledning
 
 _By [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm)_ on 7th December 2013   [@photonstorm](https://twitter.com/photonstorm)
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/tutorial_header.png)
 
-Welcome to the our first tutorial on Making a Game with Phaser. Here we will learn how to create a small game involving a player running and jumping around platforms collecting stars. While going through this process we'll explain some of the core features of the framework.
+Välkommen till vår första handledning om att göra ett spel med Phaser.
+Här kommer vi att lära oss hur man bygger ett litet spel med en spelare som hoppar och springer omkring på plattformar och samlar stjärnor.
+Medan vi går igenom stegen kommer vi att förklara några av kärnfunktionerna i ramverket.
 
-### What is Phaser?
+### Vad är Phaser?
 
-Phaser is an HTML5 game framework which aims to help developers make powerful, cross-browser HTML5 games really quickly and, unlike some others, has solely been built to work with the mobile browsers. The only browser requirement is the support of the canvas tag. It also borrows a lot from Flixel.
+Phaser är ett ramverk för spel i HTML5 med målet att hjälpa utvecklare att riktigt snabbt göra kraftfulla HTML5-spel som fungerar i alla webbläsare och som, till skillnad från en del andra ramverk, är byggt speciellt för att fungera med mobila webbläsare.
+Det enda kravet på webbläsaren är att den stödjer *canvas*-taggen.
+Ramverket lånar också en hel del från Flixel.
 
-## Requirements
+## Krav
 
-[Download the source files](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip) and assets that go with this tutorial. If you have already checked out the Phaser repository from github then you have these files already. Just look in the resources/tutorials folder.
+[Ladda ner källkodsfilerna](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip) och resurserna som hör till den här handledningen. Om du redan har hämtat ner Phaser-repot så har du redan de här filerna. Titta bara i mappen *resources/tutorials*.
 
-You need to have a very, very basic knowledge of JavaScript.
+Du behöver ha lite, lite grundläggande kunskap i JavaScript.
 
-Also make sure you go through the [Getting Started Guide](/tutorials/getting-started), it will show you how to download the framework, set up a local development environment, and give you a glimpse of the structure of a Phaser project and its core functions.
+Tänk också på at gå igenom [Getting Started Guide](/tutorials/getting-started);
+den visar hur du laddar ner ramverket, sätter upp en lokal utvecklingsmiljö och ger dig en vink om strukturen på ett Phaser-projekt och kärnfunktionerna.
 
-If you've gone through the Getting Started Guide you will have downloaded Phaser and got everything set-up and ready to code. Download the resources for this tutorial and unzip them into your web root.
+Om du har gått igenom startguiden har du redan laddar ner Phaser och har allt installerat och klart för att koda. Ladda ner resurserna för den här handledningen och packa upp dem i rotmappen på din webbserver.
 
-Open the `part1.html` page in your editor of choice and let's have a closer look at the code. After a little boilerplate HTML that includes Phaser the code structure looks like this:
+Öppna sidan `part1.html` i din editor så tar vi en närmare titt på koden. Nedanför lite standard-HTML som läser in Phaser, ser kodstrukturen ut så här:
 
 ```javascript
 var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
@@ -34,8 +39,12 @@ function create() {
 function update() {
 }
 ```
-Line 1 is where you bring Phaser to life by creating an instance of a Phaser.Game object and assigning it to a local variable called 'game'. Calling it 'game' is a common practice, but not a requirement, and this is what you will find in the Phaser examples.
+Rad 1 är blåser liv i Phaser genom att skapa en instans av objektet *Phaser.Game* och sparar den i en lokal variabel som heter 
+'game'.
+Att kalla variabeln 'game' är brukligt, men inget krav, och du kommer att se den i Phaser-exemplen.
 
-The first two parameters are the width and the height of the canvas element that Phaser will create. In this case 800 x 600 pixels. Your game world can be any size you like, but this is the resolution the game will display in. The third parameter can be either Phaser.CANVAS, Phaser.WEBGL, or Phaser.AUTO. This is the rendering context that you want to use. The recommended parameter is Phaser.AUTO which automatically tries to use WebGL, but if the browser or device doesn't support it it'll fall back to Canvas.
+De första två parametrarna är bredden och höjden på *canvas*-elementet som Phaser skapar. I det här fallet 800 x 600 pixlar.
+Din spelvärld kan ha godtycklig storlek, men detta är upplösningen som spelet kommer att visas i. Den tredje parametern kan vara antingen *Phaser.CANVAS*, *Phaser.WEBGL* eller *Phaser.AUTO*.
+Detta är den s.k. ritkontexten som du vill använda. Den parameter som rekommenderas är *Phaser.AUTO*, som automatiskt försöker använda WebGL, men om webbläsaren eller enheten inte stödjer det så faller Phaser tillbaks på Canvas.
 
-The fourth parameter is an empty string, this is the id of the DOM element in which you would like to insert the canvas element that Phaser creates. As we've left it blank it will simply be appended to the body. The final parameter is an object containing four references to Phasers essential functions. Their use is thoroughly explained here. Note that this object isn't required - Phaser supports a full State system allowing you to break your code into much cleaner single objects. But for a simple Getting Started guide such as this we'll use this approach as it allows for faster prototyping.
+Den fjäde parametern är en tom sträng, som är id på det DOM-element där du vill lägga in *canvas*-elementet som Phaser skapar. Eftersom vi lämnat den tom kommer *canvas*-elementet helt enkelt att läggas till i *body*. Den sista parametern är ett objekt med fyra referenser till Phasers viktigaste funktioner. Hur de användas förklaras noggrant här. Lägg märke till att objektet inte är obligatoriskt &ndash; Phaser stödjer ett fullständig system med tillstånd som låter dig dela upp din kod i mycket renare enstaka objekt. Men för en enkel kom igång-handledning som denna gör vi så här eftersom det här sättet låter oss prototypa snabbare.
