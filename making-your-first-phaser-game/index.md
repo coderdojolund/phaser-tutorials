@@ -21,7 +21,7 @@ Ramverket lånar också en hel del från Flixel.
 
 Du behöver ha lite, lite grundläggande kunskap i JavaScript.
 
-Tänk också på att gå igenom [Getting Started Guide](/tutorials/getting-started);
+Tänk också på att gå igenom [Getting Started Guide](http://phaser.io/tutorials/getting-started);
 den visar hur du laddar ner ramverket, sätter upp en lokal utvecklingsmiljö och ger dig en aning om strukturen på ett Phaser-projekt och kärnfunktionerna.
 
 Om du har gått igenom startguiden har du redan laddar ner Phaser och har allt installerat och klart för att koda. Ladda ner resurserna för den här handledningen och packa upp dem i rotmappen på din webbserver.
