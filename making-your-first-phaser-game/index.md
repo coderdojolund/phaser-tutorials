@@ -51,5 +51,5 @@ Detta är den s.k. rit-kontexten som du vill använda. Den parameter som rekomme
 Den fjäde parametern är en tom sträng, som är id på det DOM-element där du vill lägga in *canvas*-elementet som Phaser skapar. Eftersom vi lämnat den tom kommer *canvas*-elementet helt enkelt att läggas till i *body*. Den sista parametern är ett objekt med fyra referenser till Phasers viktigaste funktioner. Hur de användas förklaras noggrant här. Lägg märke till att objektet inte är obligatoriskt &ndash; Phaser stödjer ett fullständig system med tillstånd som låter dig dela upp din kod i mycket renare enstaka objekt. Men för en enkel kom igång-handledning som denna gör vi så här eftersom det här sättet låter oss prototypa snabbare.
 
 ## Ordlista
-* DOM-element
-* rit-kontext
+* **DOM-element** `<head>`, `<body>` osv. som är byggstenarna i HTML 
+* **rit-kontext** En grafisk rityta på en webbsida, t.ex. `<canvas>`
