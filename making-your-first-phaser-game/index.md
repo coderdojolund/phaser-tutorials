@@ -54,4 +54,10 @@ Den fjäde parametern är en tom sträng, som är id på det DOM-element där du
 * **DOM-element** DOM är det sätt som JavaScript ser innehållet på en webbsida. DOM:en är ett objekt som innehåller formatteringen för HTML/XHTML/XML-koden och webbläsarens tillstånd. Exempel på DOM-element är `<div>`, `<html>`, `<head>` och `<body>`. Man styr utseendet på DOM-elementen med språket CSS och påverkar deras beteende med språket JavaScript.
 * **rit-kontext** En grafisk rityta på en webbsida, t.ex. `<canvas>`
 
+## Om den svenska bearbetningen
+Den svenska versionen följer originalet så nära som möjligt. Följande ändringar har gjorts här:
+# Rekommenderar att köra brackets.io
+# Flyttar om koden så att all JavaScript ligger i egna filer, dvs. originalfilerna *partX.html* delas upp i *partX.html* och *partX.js*. Det gör det möjligt att köra jslint vilket undviker många dumma programmeringsfel som kan vara svåra att hitta för nybörjare
+# Minimala kodomflyttningar för att koden ska följa *jslint*.
+
 [Utskriftsversion](https://github.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
