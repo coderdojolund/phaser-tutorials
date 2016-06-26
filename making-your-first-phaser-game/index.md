@@ -56,8 +56,11 @@ Den fjäde parametern är en tom sträng, som är id på det DOM-element där du
 
 ## Om den svenska bearbetningen
 Den svenska versionen följer originalet så nära som möjligt. Följande ändringar har gjorts här:
-# Rekommenderar att köra brackets.io
-# Flyttar om koden så att all JavaScript ligger i egna filer, dvs. originalfilerna *partX.html* delas upp i *partX.html* och *partX.js*. Det gör det möjligt att köra jslint vilket undviker många dumma programmeringsfel som kan vara svåra att hitta för nybörjare
-# Minimala kodomflyttningar för att koden ska följa *jslint*.
+
+1. Rekommendation att köra *brackets*-editorn
+
+1. Flyttar om kod så att all JavaScript ligger i egna filer, dvs. originalfilerna *partX.html* delas upp i *partX.html* och *partX.js*. Detta gör det möjligt att köra *jslint* inifrån brackets vilket undviker många dumma programmeringsfel som kan vara svåra att hitta för nybörjare
+
+1. Minimala kodomflyttningar för att koden ska följa *jslint*.
 
 [Utskriftsversion](https://github.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
