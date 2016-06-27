@@ -1,4 +1,4 @@
-Based on phaser.io tutorial source code
+*Based on the [original phaser.io tutorial](https://github.com/photonstorm/phaser/tree/v2.5.0/resources/tutorials/02%20Making%20your%20first%20game)*
 
 ## Om den svenska bearbetningen
 Den svenska versionen följer originalet så nära som möjligt. Följande ändringar har gjorts här:
