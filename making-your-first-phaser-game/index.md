@@ -85,7 +85,7 @@ Den sista parametern är ett objekt med tre referenser till Phasers viktigaste f
 # [Fortsätt till del 2](/del2.md)
 
 ## Att läsa på
-[Mer om Phaser.Game hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
+[Mer om `Phaser.Game` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
 
 ## Ordlista
 * **DOM-element** DOM är det sätt som JavaScript ser innehållet på en webbsida. DOM:en är ett objekt som innehåller formatteringen för HTML/XHTML/XML-koden och webbläsarens tillstånd. Exempel på DOM-element är `<div>`, `<html>`, `<head>` och `<body>`. Man styr utseendet på DOM-elementen med språket CSS och påverkar deras beteende med språket JavaScript.
