@@ -26,7 +26,7 @@ Installera editorn Brackets. [Se beskrivningen här.](https://github.com/coderdo
 
 Starta Brackets och öppna mappen *phaser_tutorial_02*.
 
-Öppna sidan `part1.html` i Brackets så tar vi en närmare titt på koden. Filen innehåller lite standard-HTML som läser in Phaser och vår kod i `part1.js`. 
+Öppna sidan `part1.html` i Brackets så tar vi en närmare titt på koden. Filen innehåller lite vanlig HTML som läser in Phaser och vår kod i `part1.js`. 
 
 ```html
 <!doctype html> 
@@ -47,9 +47,7 @@ Starta Brackets och öppna mappen *phaser_tutorial_02*.
 </html>
 ```
 
-Öppna nu `part1.js` i Brackets.
-
-I `part1.js` ser kodstrukturen ut så här:
+Öppna nu `part1.js` i Brackets. Kodstrukturen ser ut så här:
 ```javascript
 var game;
 
