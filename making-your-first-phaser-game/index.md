@@ -26,7 +26,28 @@ Installera editorn Brackets. [Se beskrivningen här.](https://github.com/coderdo
 
 Starta Brackets och öppna mappen *phaser_tutorial_02*.
 
-Öppna sidan `part1.html` i Brackets så tar vi en närmare titt på koden. Filen innehåller lite standard-HTML som läser in Phaser och vår kod i `part1.js`. Öppna den.
+Öppna sidan `part1.html` i Brackets så tar vi en närmare titt på koden. Filen innehåller lite standard-HTML som läser in Phaser och vår kod i `part1.js`. 
+
+```html
+<!doctype html> 
+<html lang="en"> 
+<head> 
+	<meta charset="UTF-8" />
+	<title>Phaser - Making your first game, part 1</title>
+	<script src="//cdn.jsdelivr.net/phaser/2.5.0/phaser.min.js"></script>
+    <style type="text/css">
+        body {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<script src="part1.js"/>
+</body>
+</html>
+```
+
+Öppna nu `part1.js` i Brackets.
 
 I `part1.js` ser kodstrukturen ut så här:
 ```javascript
@@ -47,11 +68,21 @@ Den sista raden blåser liv i Phaser genom att skapa en instans av objektet *Pha
 *game*.
 Att kalla variabeln *game* är vanligast, men inget krav, och du kommer att se den i Phaser-exemplen.
 
+## Första två parametrarna: `800, 600`
 De första två parametrarna är bredden och höjden på *canvas*-elementet som Phaser skapar. I det här fallet 800 x 600 pixlar.
-Din spelvärld kan ha vilken storlek som helst, men detta är upplösningen som spelet kommer att visas i. Den tredje parametern kan vara antingen *Phaser.CANVAS*, *Phaser.WEBGL* eller *Phaser.AUTO*.
-Detta är den s.k. rit-kontexten som du vill använda. Den parameter som rekommenderas är *Phaser.AUTO*, som automatiskt försöker använda WebGL, men om webbläsaren eller enheten inte stödjer det så faller Phaser tillbaks på Canvas.
+Din spelvärld kan ha vilken storlek som helst, men detta är upplösningen som spelet kommer att visas i. 
 
-Den fjäde parametern är en tom sträng, som är id på det DOM-element där du vill lägga in *canvas*-elementet som Phaser skapar. Eftersom vi lämnat den tom kommer *canvas*-elementet helt enkelt att läggas till i *body*. Den sista parametern är ett objekt med fyra referenser till Phasers viktigaste funktioner. Hur de användas förklaras noggrant här. Lägg märke till att objektet inte är obligatoriskt &ndash; Phaser stödjer ett fullständig system med tillstånd som låter dig dela upp din kod i mycket renare enstaka objekt. Men för en enkel kom igång-handledning som denna gör vi så här eftersom det här sättet låter oss prototypa snabbare.
+## Tredje parametern: `Phaser.AUTO`
+Den tredje parametern kan vara antingen `Phaser.CANVAS`, `Phaser.WEBGL` eller `Phaser.AUTO`.
+Detta är den s.k. rit-kontexten som du vill använda. Den parameter som rekommenderas är `Phaser.AUTO`, som automatiskt försöker använda WebGL, men om webbläsaren eller enheten inte stödjer det så faller Phaser tillbaks på Canvas.
+
+## Fjärde parametern: `''`
+Den fjäde parametern är en tom sträng, som är id på det DOM-element där du vill lägga in *canvas*-elementet som Phaser skapar. Eftersom vi lämnat den tom kommer *canvas*-elementet helt enkelt att läggas till i *body*. 
+
+## Sista parametern: `{ preload: preload, create: create, update: update }`
+Den sista parametern är ett objekt med tre referenser till Phasers viktigaste funktioner. Hur de används förklaras noggrant här. Lägg märke till att objektet inte är obligatoriskt &ndash; Phaser stödjer ett fullständig system med tillstånd som låter dig dela upp din kod i mycket renare enstaka objekt. Men för en enkel kom igång-handledning som denna gör vi så här eftersom det här sättet låter oss prototypa snabbare.
+
+# [Fortsätt till del 2](/del2.md)
 
 ## Att läsa på
 [Mer om Phaser.Game hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
