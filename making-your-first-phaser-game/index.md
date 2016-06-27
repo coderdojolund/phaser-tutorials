@@ -80,6 +80,8 @@ Den fjäde parametern är en tom sträng, som är id på det DOM-element där du
 ## Sista parametern: `{ preload: preload, create: create, update: update }`
 Den sista parametern är ett objekt med tre referenser till Phasers viktigaste funktioner. Hur de används förklaras noggrant här. Lägg märke till att objektet inte är obligatoriskt &ndash; Phaser stödjer ett fullständig system med tillstånd som låter dig dela upp din kod i mycket renare enstaka objekt. Men för en enkel kom igång-handledning som denna gör vi så här eftersom det här sättet låter oss prototypa snabbare.
 
+Försöker du köra koden så här långt kommer du att märka att inget händer.
+
 # [Fortsätt till del 2](/del2.md)
 
 ## Att läsa på
