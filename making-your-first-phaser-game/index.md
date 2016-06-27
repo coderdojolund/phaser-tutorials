@@ -22,7 +22,7 @@ och resurserna som hör till den här handledningen. Packa upp ZIP-filen på din
 
 Du behöver ha lite, lite grundläggande kunskap i JavaScript.
 
-Installera editorn Brackets som beskrivs här.
+Installera editorn Brackets. [Se beskrivningen här.](https://github.com/coderdojolund/flappy-bird-phaser-lessmilk.com/blob/master/docs/flappy-bird-phaser-0.md)
 
 Starta Brackets och öppna mappen *phaser_tutorial_02*.
 
