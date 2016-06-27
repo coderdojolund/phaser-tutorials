@@ -53,18 +53,12 @@ Detta är den s.k. rit-kontexten som du vill använda. Den parameter som rekomme
 
 Den fjäde parametern är en tom sträng, som är id på det DOM-element där du vill lägga in *canvas*-elementet som Phaser skapar. Eftersom vi lämnat den tom kommer *canvas*-elementet helt enkelt att läggas till i *body*. Den sista parametern är ett objekt med fyra referenser till Phasers viktigaste funktioner. Hur de användas förklaras noggrant här. Lägg märke till att objektet inte är obligatoriskt &ndash; Phaser stödjer ett fullständig system med tillstånd som låter dig dela upp din kod i mycket renare enstaka objekt. Men för en enkel kom igång-handledning som denna gör vi så här eftersom det här sättet låter oss prototypa snabbare.
 
+## Att läsa på
+[Mer om Phaser.Game hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
+
 ## Ordlista
 * **DOM-element** DOM är det sätt som JavaScript ser innehållet på en webbsida. DOM:en är ett objekt som innehåller formatteringen för HTML/XHTML/XML-koden och webbläsarens tillstånd. Exempel på DOM-element är `<div>`, `<html>`, `<head>` och `<body>`. Man styr utseendet på DOM-elementen med språket CSS och påverkar deras beteende med språket JavaScript.
 * **rit-kontext** En grafisk rityta på en webbsida, t.ex. `<canvas>`
-
-## Om den svenska bearbetningen
-Den svenska versionen följer originalet så nära som möjligt. Följande ändringar har gjorts här:
-
-1. Rekommendation att köra *brackets*-editorn från början.
-
-1. Flyttar om kod så att all JavaScript ligger i egna filer, dvs. originalfilerna *partX.html* delas upp i *partX.html* och *partX.js*. Detta gör det möjligt att köra *jslint* inifrån brackets vilket undviker många dumma programmeringsfel som kan vara svåra att hitta för nybörjare
-
-1. Minimala kodomflyttningar för att koden ska följa *jslint*.
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
