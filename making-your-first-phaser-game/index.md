@@ -17,19 +17,20 @@ Ramverket lånar också en hel del från Flixel.
 
 ## Krav
 
-[Ladda ner källkodsfilerna](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip) och resurserna som hör till den här handledningen. Om du redan har hämtat ner Phaser-repot så har du redan de här filerna. Titta bara i mappen *resources/tutorials*.
+[Ladda ner källkodsfilerna](https://github.com/coderdojolund/phaser-tutorials/archive/master.zip)
+och resurserna som hör till den här handledningen. Packa upp ZIP-filen på din hårddisk.
 
 Du behöver ha lite, lite grundläggande kunskap i JavaScript.
 
-Tänk också på att gå igenom [Getting Started Guide](http://phaser.io/tutorials/getting-started);
-den visar hur du laddar ner ramverket, sätter upp en lokal utvecklingsmiljö och ger dig en aning om strukturen på ett Phaser-projekt och kärnfunktionerna.
+Installera editorn Brackets som beskrivs här.
 
-Om du har gått igenom startguiden har du redan laddar ner Phaser och har allt installerat och klart för att koda. Ladda ner resurserna för den här handledningen och packa upp dem i rotmappen på din webbserver.
+Starta Brackets och öppna mappen *phaser_tutorial_02*.
 
-Öppna sidan `part1.html` i din editor så tar vi en närmare titt på koden. Nedanför lite standard-HTML som läser in Phaser, ser kodstrukturen ut så här:
+Öppna sidan `part1.html` i Brackets så tar vi en närmare titt på koden. Filen innehåller lite standard-HTML som läser in Phaser och vår kod i `part1.js`. Öppna den.
 
+I `part1.js` ser kodstrukturen ut så här:
 ```javascript
-var game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
+var game;
 
 function preload() {
 }
@@ -39,8 +40,10 @@ function create() {
 
 function update() {
 }
+
+game = new Phaser.Game(800, 600, Phaser.AUTO, '', { preload: preload, create: create, update: update });
 ```
-Rad 1 blåser liv i Phaser genom att skapa en instans av objektet *Phaser.Game* och sparar den i en lokal variabel som heter 
+Den sista raden blåser liv i Phaser genom att skapa en instans av objektet *Phaser.Game* och sparar den i en lokal variabel som heter 
 *game*.
 Att kalla variabeln *game* är vanligast, men inget krav, och du kommer att se den i Phaser-exemplen.
 
@@ -57,10 +60,13 @@ Den fjäde parametern är en tom sträng, som är id på det DOM-element där du
 ## Om den svenska bearbetningen
 Den svenska versionen följer originalet så nära som möjligt. Följande ändringar har gjorts här:
 
-1. Rekommendation att köra *brackets*-editorn
+1. Rekommendation att köra *brackets*-editorn från början.
 
 1. Flyttar om kod så att all JavaScript ligger i egna filer, dvs. originalfilerna *partX.html* delas upp i *partX.html* och *partX.js*. Detta gör det möjligt att köra *jslint* inifrån brackets vilket undviker många dumma programmeringsfel som kan vara svåra att hitta för nybörjare
 
 1. Minimala kodomflyttningar för att koden ska följa *jslint*.
+
+## Referenser
+[Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
 
 [Utskriftsversion](https://github.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
