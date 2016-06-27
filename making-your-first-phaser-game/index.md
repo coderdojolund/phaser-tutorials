@@ -94,4 +94,4 @@ Den sista parametern är ett objekt med tre referenser till Phasers viktigaste f
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
 
-[Skriv ut sidan](https://github.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
+[Skriv ut sidan](https://gitprint.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
