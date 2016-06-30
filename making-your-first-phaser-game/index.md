@@ -84,7 +84,7 @@ Försöker du köra koden så här långt kommer du att märka att inget händer
 
 ## `jslint` hjälper oss hitta fel i koden
 
-Om du försöker spara koden i Brackets, så märker du att det kommer ett fönster med varningar längst ner. Koden går att köra men vi kan få bort varningarna genom att lägga till det här högst upp i `part1.js`, vår kodfil.
+Om du försöker spara koden i Brackets, så märker du att det kommer ett fönster med varningar längst ner. Koden går att köra men vi kan få bort varningarna genom att lägga till det här högst upp i `part1.js`.
 
 ```javascript
 /*global Phaser */
