@@ -82,6 +82,18 @@ Den sista parametern är ett objekt med tre referenser till Phasers viktigaste f
 
 Försöker du köra koden så här långt kommer du att märka att inget händer. I del 2 ska vi ändra på det. 
 
+# `jslint` hjälper oss undvika dumma fel i koden
+
+Om du försöker spara koden i Brackets, så märker du att det kommer ett fönster med varningar längst ner. Koden går att köra men vi kan få bort varningarna genom att lägga till det här högst upp i `part1.js`, vår kodfil.
+
+```javascript
+/*global Phaser */
+/*jslint node: true */
+'use strict';
+```
+
+Spara `part1.js` igen och varningarna bör vara borta.
+
 # [Fortsätt till del 2](/del2.md)
 
 ## Att läsa på
