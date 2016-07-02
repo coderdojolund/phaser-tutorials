@@ -2,7 +2,7 @@
 
 *Av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
-[YouTube-versionen hittar du här](http://youtu.be/hxWphJYSSr4?hd=1)
+[YouTube-versionen hittar du här](http://youtube.com)
 
 Nu laddar vi resurserna som behövs för vårt spel. Detta gör vi med anrop till `game.load` inuti en funktion som heter `preload`.
 Phaser letar automatiskt efter den här funktionen vid start och laddar allt som definieras i den.
