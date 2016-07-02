@@ -8,7 +8,7 @@ Under täcket skapar
 `game.add.sprite` ett nytt `Phaser.Sprite`-objekt och lägger till sprajten i &raquo;spelvärlden&laquo;.
 Alla dina objekt lever i den här världen; den liknar Stage i Actionscript3. 
 
-Obs! Spelvärlden har ingen fast storlek och fortsätter "oändligt" i alla riktningar med `0, 0` i centrum.
+Obs! Spelvärlden har ingen fast storlek och fortsätter obegränsat i alla riktningar med `0, 0` i centrum.
 För enkelhets skull låter Phaser koordinaterna `0, 0` vara övre vänstra hörnet i spelet men genom att använda det inbyggda `Camera`-objektet kan du flytta runt efter behov.
 
 Världsklassen kommer man åt via `game.world` och den har många behändiga metoder och egenskaper som hjälper till att fördela ut dina objekt inuti världen. Den har några enkla egenskaper som `game.world.height` men också några mer avancerade som vi kommer att använda i en annan handledning.
@@ -62,6 +62,7 @@ Första delen är samma som stjärnsprajten som vi hade innan, men vi har istäl
 # [<< Tillbaka till del 2](part2.md) [&ndash; Fortsätt till del 4 >>](part4.md)
 
 ## Att läsa på
+* game.world.height
 * game.physics.startSystem
 * game.add.group
 * platforms.enableBody
