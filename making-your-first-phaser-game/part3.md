@@ -5,7 +5,7 @@
 [YouTube-versionen hittar du här](http://youtube.com)
 
 Under täcket skapar 
-`game.add.sprite` ett nytt `Phaser.Sprite`-objekt och lägger till sprajten i &raquo;spelvärlden&laquo;
+`game.add.sprite` ett nytt `Phaser.Sprite`-objekt och lägger till sprajten i &raquo;spelvärlden&laquo;.
 Alla dina objekt lever i den här världen; den liknar Stage i Actionscript3. 
 
 Obs! Spelvärlden har ingen fast storlek och fortsätter "oändligt" i alla riktningar med `0, 0` i centrum.
