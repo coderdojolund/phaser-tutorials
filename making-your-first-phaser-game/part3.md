@@ -4,17 +4,22 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-Under the hood game.add.sprite is creating a new Phaser.Sprite object and adding the sprite to the “game world”. This world is where all your objects live, it can be compared to the Stage in Actionscript3.
+Under täcket skapar 
+`game.add.sprite` ett nytt `Phaser.Sprite`-objekt och lägger till sprajten i &raquo;spelvärlden&laquo;
+Alla dina objekt lever i den här världen; den liknar Stage i Actionscript3. 
 
-Note: The game world has no fixed size and extends infinitely in all directions, with `0, 0` being the center of it. For convenience Phaser places `0, 0` at the top left of your game for you, but by using the built-in Camera you can move around as needed.
+Obs! Spelvärlden har ingen fast storlek och fortsätter "oändligt" i alla riktningar med `0, 0` i centrum.
+För enkelhets skull låter Phaser koordinaterna `0, 0` vara övre vänstra hörnet i spelet men genom att använda det inbyggda `Camera`-objektet kan du flytta runt efter behov.
 
-The world class can be accessed via game.world and comes with a lot of handy methods and properties to help you distribute your objects inside the world. It includes some simple properties like game.world.height, but also some more advanced ones that we will use in another tutorial.
+Världsklassen kommer man åt via `game.world` och den har många behändiga metoder och egenskaper som hjälper till att fördela ut dina objekt inuti världen. Den har några enkla egenskaper som `game.world.height` men också några mer avancerade som vi kommer att använda i en annan handledning.
 
-For now let's build up the scene by adding a background and platforms. Here is the updated create function:
+Men nu bygger vi upp scenen genom att lägga till en bakgrund och plattformar. Här är den uppdaterade `create`-funktionen.
 ```javascript
 var platforms;
 
 function create() {
+    var ground,
+        ledge;
 
     //  We're going to be using physics, so enable the Arcade Physics system
     game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -48,18 +53,21 @@ function create() {
 
 }
 ```
-
-If you run this, which you'll find as `part4.html` in the tutorial zip file, you should see a much more game-like scene:
+Om du kör det här, som finns i `part4.html` i ZIP-filen som hör till handledningen, bör du se en mycket mer spelliknande scen:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part4.png)
 
-The first part is the same as the star sprite we had before, only instead we changed the key to 'sky' and it has displayed our sky background instead. This is an 800x600 PNG that fills the game screen.
+Första delen är samma som stjärnsprajten som vi hade innan, men vi har istället ändrat nyckeln till `'sky'` och vår himmelsbakgrund visas istället. Detta är en PNG-fil på 800x600 pixlar som fyller spelskärmen.
 
 # [<< Tillbaka till del 2](part2.md) [&ndash; Fortsätt till del 4 >>](part4.md)
 
 ## Att läsa på
-* [Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
-* [Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#spritesheet)
+* game.physics.startSystem
+* game.add.group
+* platforms.enableBody
+* platforms.create
+* platforms.scale.setTo
+* platforms.body.immovable
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
