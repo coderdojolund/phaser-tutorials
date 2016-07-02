@@ -32,9 +32,10 @@ Ordningen som elementen visas på skärmen är samma som ordningen som du skapar
 # [<< Tillbaka till del 1 ](/index.md) [Fortsätt till del 3 >>](/del3.md)
 
 ## Att läsa på
-TBD [Mer om `Phaser.Game` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
+[Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
+[Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#spritesheet)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
 
-[Skriv ut sidan](https://gitprint.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/index.md)
+[Skriv ut sidan](https://gitprint.com/coderdojolund/phaser-tutorials/blob/master/making-your-first-phaser-game/part2.md)
