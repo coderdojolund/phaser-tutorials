@@ -4,7 +4,7 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-# [<< Tillbaka till del 2](/part2.md) [&ndash; Fortsätt till del 4 >>](/part4.md)
+# [<< Tillbaka till del 2](part2.md) [&ndash; Fortsätt till del 4 >>](part4.md)
 
 ## Att läsa på
 * [Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
