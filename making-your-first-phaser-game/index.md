@@ -96,7 +96,7 @@ Om du försöker spara koden i Brackets, så märker du att det kommer ett föns
 
 Spara `part1.js` igen och varningarna bör vara borta.
 
-# [Fortsätt till del 2](/del2.md)
+# [Fortsätt till del 2 >>](part2.md)
 
 ## Att läsa på
 [Mer om `Phaser.Game` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
