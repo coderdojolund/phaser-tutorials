@@ -29,7 +29,7 @@ Om du tar upp sidan i en webbläsare bör du nu se en svart skärm med en enda s
 
 Ordningen som elementen visas på skärmen är samma som ordningen som du skapar dem. Så om du vill lägga en bakgrund bakom stjärnsprajten behöver du försäkra dig om att den lades till som en sprajt först, före stjärnan.
 
-# [Tillbaks till del 1 :point_left:](/index.md) [Fortsätt till del 3 :point_right:](/del3.md)
+# [<< Tillbaka till del 1 ](/index.md) [Fortsätt till del 3 >>](/del3.md)
 
 ## Att läsa på
 TBD [Mer om `Phaser.Game` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Game.html)
