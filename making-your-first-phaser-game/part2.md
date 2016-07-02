@@ -1,12 +1,11 @@
-## Part 2 - Loading Assets
-
+## Del 2 &ndash; Ladda resurser
 
 *Av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
-Let's load the assets we need for our game. You do this by putting calls to game.load inside of a function called preload. Phaser will automatically look for this function when it starts and load anything defined within it.
+Nu laddar vi resurserna som behövs för vårt spel. Detta gör vi med anrop till `game.load` inuti en funktion som heter `preload`.
+Phaser letar automatiskt efter den här funktionen vid start och laddar allt som definieras i den.
 
-Currently the `preload` function is empty. Change it to:
-
+Just nu är funktionen `preload` tom. Ändra den till
 ```javascript
     game.load.image('sky', 'assets/sky.png');
     game.load.image('ground', 'assets/platform.png');
@@ -14,16 +13,16 @@ Currently the `preload` function is empty. Change it to:
     game.load.spritesheet('dude', 'assets/dude.png', 32, 48);
 ```
 
-This will load in 4 assets: 3 images and a sprite sheet. It may appear obvious to some of you, but I would like to point out the first parameter, also known as the asset key. This string is a link to the loaded asset and is what you'll use in your code when creating sprites. You're free to use any valid JavaScript string as the key.
+Detta laddar in fyra resurser: tre bilder och en sprajtkarta. Det kanske är uppenbart för vissa av er, men jag vill lyfta fram den första parametern, som kallas resursnyckeln. Den här strängen är länken till den inlästa resursen och det är den du använder i din kod när du skapar sprajtar. Du kan använda en giltig JavaScript-sträng som nyckel.
 
-### Create a Sprite
+### Skapa en sprajt
 
-In order to add a sprite to our game place the following code in the create function:
+För att skapa en sprajt i vårt spel lägger vi den här koden i funktionen `create`:
 
 `game.add.sprite(0, 0, 'star');`
 
-If you bring up the page in a browser you should now see a black game screen with a single star sprite in the top left corner:
+Om du tar upp sidan i en webbläsare bör du nu se en svart skärm med en enda stjärnsprajt i övre vänstra hörnet:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part3.png)
 
-The order in which items are rendered in the display matches the order in which you create them. So if you wish to place a background behind the star sprite you would need to ensure that it was added as a sprite first, before the star.
+Ordningen som elementen visas på skärmen är samma som ordningen som du skapar dem. Så om du vill lägga en bakgrund bakom stjärnsprajten behöver du försäkra dig om att den lades till som en sprajt först, före stjärnan.
