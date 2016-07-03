@@ -57,7 +57,7 @@ Om du kör det här, som finns i `part4.html` i ZIP-filen som hör till handledn
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part4.png)
 
-Första delen är samma som stjärnsprajten som vi hade innan, men vi har istället ändrat nyckeln till `'sky'` och vår himmelsbakgrund visas istället. Detta är en PNG-fil på 800x600 pixlar som fyller spelskärmen.
+Första delen är samma som stjärnsprajten som vi hade innan, men vi har istället ändrat nyckeln till `'sky'` och vår himmelsbakgrund visas istället. Detta är en PNG-fil på 800&times;600 pixlar som fyller spelskärmen.
 
 # [<< Tillbaka till del 2](part2.md) [&ndash; Fortsätt till del 4 >>](part4.md)
 
