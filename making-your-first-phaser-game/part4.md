@@ -4,6 +4,8 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
+Grupper är mycket kraftfulla. Som namnet antyder låter de dig gruppera ihop liknande objekt och styra dem som en sammanhållen enhet.
+
 Groups are really powerful. As their name implies they allow you to group together similar objects and control them all as one single unit. You can also check for collision between Groups, and for this game we'll be using two different Groups, one of which is created in the code above for the platforms.
 
 `platforms = game.add.group();`
