@@ -1,4 +1,4 @@
-## Del 3 &ndash; Grupper
+## Del 4 &ndash; Grupper
 
 *[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
