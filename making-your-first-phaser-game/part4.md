@@ -1,10 +1,10 @@
 ## Del 4 &ndash; Grupper
 
-*[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
+*[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/inddex) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-Phaser-grupper är mycket kraftfulla. Som namnet antyder låter de dig gruppera ihop liknande objekt och styra dem som en sammanhållen enhet. Man kan också känna av kollisioner mellan grupper och i det här spelet ska vi använda två olika grupper; en av grupperna, `platforms`, skapade vi i del 3.
+Phaser-grupper är mycket kraftfulla. Som namnet antyder låter de dig gruppera ihop liknande objekt och styra dem som en sammanhållen enhet. Man kan också känna av kollisioner mellan grupper och i det här spelet ska vi använda två olika grupper; en av grupperna, `platforms`, skapade vi i [del 3](del3.md).
 
 `platforms = game.add.group();`
 
@@ -14,13 +14,13 @@ När den skapats kan vi lägga till objekt i den.
 Först kommer marken.
 Den ligger längst ner på spelytan och använder `ground`-bilden som vi laddade innan.
 Marken skalas så att den fyller ut bredden på spelet.
-Till slut sätter vi markens `immovable-egenskap till `true`. Om vi inte hade gjort det skulle marken flytta sig när spelaren krockar med den; mer om detta i fysikavsnittet i nästa del.
+Till slut sätter vi markens `immovable`-egenskap till `true`. Om vi inte hade gjort det skulle marken flytta sig när spelaren krockar med den; mer om detta i fysikavsnittet i [nästa del](part5.md).
 
-Med marken på plats skapar vi två mindre hyllor som man kan hoppa till med exakt samma metod som för marken.
+Med marken på plats skapar vi två mindre avsatser som man kan hoppa till, med exakt samma metod som för marken.
 
 ### Redo, spelare ett
 
-Skapa en ny lokal variabel som heter `player` och lägg till den här koden i funktionen `create`. Du kan se det i `part5.js`:
+Skapa en ny lokal variabel som heter `player` och lägg till den här koden i funktionen `create`. Du kan se koden i `part5.js`:
 
 ```javascript
     // The player and its settings
