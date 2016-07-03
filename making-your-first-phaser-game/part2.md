@@ -31,7 +31,7 @@ Ordningen som elementen visas på skärmen är samma som ordningen som du skapar
 
 # [<< Tillbaka till del 1 ](index.md) [&ndash; Fortsätt till del 3 >>](part3.md)
 
-## Att läsa på
+## Vill du veta mer?
 * [Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
 * [Mer om `Phaser.Loader.image` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#spritesheet)
 
