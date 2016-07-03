@@ -22,8 +22,12 @@ kommer du att se att spelaren faller neråt utan att stanna utan hänsyn till ma
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part5.png)
 
-The reason for this is that we're not yet testing for collision between the ground and the player. We already told Phaser that our ground and ledges would be immovable. Had we not done that when the player collided with them it would stop for a moment and then everything would have collapsed. This is because unless told otherwise, the ground sprite is a moving physical object (also known as a dynamic body) and when the player hits it, the resulting force of the collision is applied to the ground, therefore, the two bodies exchange their velocities and ground starts falling as well.
+Orsaken till det är att vi ännu inte känner av kollisioner mellan marken och spelaren.
+Vi har redan sagt åt Phaser att vår mark och avsatserna ska vara oflyttbara.
+Hade vi inte gjort det när spelaren krockade med dem så skulle den ha stannat ett ögonblick och sen skulle allting ha rasat.
+Detta eftersom marksprajten, om inget annat sagts, är ett rörligt fysiskt föremål (också kallat dynamisk kropp) och när spelaren träffar den så påverkar den resulterande kraften på marken; därför utbyter de kropparna rörelseenergi och marken börjar också att falla.
 
+Så för 
 So to allow the player to collide and take advantage of the physics properties we need to introduce a collision check in the update function:
 
 ```javascript
