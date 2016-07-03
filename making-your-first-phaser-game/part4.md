@@ -48,10 +48,12 @@ Så här ser den fullständiga sprajtkartan ut:
 
 Du kan se totalt nio rutor, fyra för att springa åt höger, en för att se mot kameran och fyra för att springa åt höger. Lägg märke till att Phaser har stöd för att spegelvända animeringsrutor men i den här handledningen kör vi det gamla sättet.
 
-Vi definierar två animeringar som heter `left´ och `right`.
-`left`-animeringen använder rutorna 0, 1, 2 och 3 och kör 10 rutor per sekund.
+Vi definierar två animeringar som heter `left` och `right`.
+`left`-animeringen använder rutorna 0, 1, 2 och 3 och den kör 10 rutor per sekund (FPS).
 
-The 'true' parameter tells the animation to loop. This is our standard run-cycle and we repeat it for running in the opposite direction. With the animations set we create a few physics properties.
+Parametern `true` betyder att animeringen ska loopa.
+Detta är vår vanliga slinga för löpanimeringen och vi upprepar den för löpning åt motsatta hållet. 
+När vi satt animeringen skapar vi några fysikegenskaper.
 
 # [<< Tillbaka till del 3](part3.md) [&ndash; Fortsätt till del 5 >>](part5.md)
 
