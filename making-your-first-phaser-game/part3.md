@@ -2,7 +2,7 @@
 
 *[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
-[YouTube-versionen hittar du här](http://youtube.com)
+[YouTube-versionen hittar du här](https://youtu.be/WnAUkNWk6ws)
 
 Under täcket skapar 
 `game.add.sprite` ett nytt `Phaser.Sprite`-objekt och lägger till sprajten i &raquo;spelvärlden&laquo;.
