@@ -61,14 +61,14 @@ Första delen är samma som stjärnsprajten som vi hade innan, men vi har istäl
 
 # [<< Tillbaka till del 2](part2.md) [&ndash; Fortsätt till del 4 >>](part4.md)
 
-## Att läsa på
-* game.world.height
-* game.physics.startSystem
-* game.add.group
-* platforms.enableBody
-* platforms.create
-* platforms.scale.setTo
-* platforms.body.immovable
+## Vill du veta mer?
+* [game.world.height](http://phaser.io/docs/2.5.0/Phaser.World.html#height)
+* [game.physics.startSystem](http://phaser.io/docs/2.5.0/Phaser.Physics.html#startSystem)
+* [game.add.group](http://phaser.io/docs/2.5.0/Phaser.World.html#add)
+* [platforms.enableBody](http://phaser.io/docs/2.5.0/Phaser.Group.html#enableBody)
+* [platforms.create](http://phaser.io/docs/2.5.0/Phaser.Group.html#create)
+* [platforms.scale.setTo](http://phaser.io/docs/2.5.0/Phaser.Group.html#scale)
+* [platforms.body.immovable](http://phaser.io/docs/2.4.4/Phaser.Physics.Arcade.Body.html#immovable)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
