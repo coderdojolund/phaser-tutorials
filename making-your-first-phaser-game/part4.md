@@ -38,14 +38,20 @@ Skapa en ny lokal variabel som heter `player` och lägg till den här koden i fu
     player.animations.add('left', [0, 1, 2, 3], 10, true);
     player.animations.add('right', [5, 6, 7, 8], 10, true);
 ```
-
-This creates a new sprite called 'player', positioned at 32 pixels by 150 pixels from the bottom of the game. We're telling it to use the 'dude' asset previously loaded. If you glance back to the preload function you'll see that 'dude' was loaded as a sprite sheet, not an image. That is because it contains animation frames. This is what the full sprite sheet looks like:
+Detta skapar en ny sprajt som heter `player` placerad 32x150 pixlar från spelets underkant.
+Vi säger åt den att använda resursen `dude` som vi laddat innan.
+Om du går tillbaks och tittar på funktionen `preload` ser du att `dude` laddades som en sprajtkarta, inte som bild. 
+Detta eftersom den innehåller animeringsrutor.
+Så här ser den fullständiga sprajtkartan ut:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/dude.png)
 
-You can see 9 frames in total, 4 for running left, 1 for facing the camera and 4 for running right. Note: Phaser supports flipping sprites to save on animation frames, but for the sake of this tutorial we'll keep it old school.
+Du kan se totalt nio rutor, fyra för att springa åt höger, en för att se mot kameran och fyra för att springa åt höger. Lägg märke till att Phaser har stöd för att spegelvända animeringsrutor men i den här handledningen kör vi det gamla sättet.
 
-We define two animations called 'left' and 'right'. The 'left' animation uses frames 0, 1, 2 and 3 and runs at 10 frames per second. The 'true' parameter tells the animation to loop. This is our standard run-cycle and we repeat it for running in the opposite direction. With the animations set we create a few physics properties.
+Vi definierar två animeringar som heter `left´ och `right`.
+`left`-animeringen använder rutorna 0, 1, 2 och 3 och kör 10 rutor per sekund.
+
+The 'true' parameter tells the animation to loop. This is our standard run-cycle and we repeat it for running in the opposite direction. With the animations set we create a few physics properties.
 
 # [<< Tillbaka till del 3](part3.md) [&ndash; Fortsätt till del 5 >>](part5.md)
 
