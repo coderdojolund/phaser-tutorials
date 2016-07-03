@@ -4,13 +4,21 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-Phaser has support for a variety of different physics systems. It ships with Arcade Physics, Ninja Physics and P2.JS Full-Body Physics. For the sake of this tutorial we will be using the Arcade Physics system, which is simple and light-weight, perfect for mobile browsers. You'll notice in the code that we have to start the physics system running, and then for every sprite or Group that we wish to use physics on we enable them.
+Phaser stödjer ett antal olika fysiksystem.
+Som standard ingår *Arcade Physics*, *Ninja Physics* and *P2.JS Full-Body Physics*.
+I den här handledningen kommer vi att använda systemet *Arcade Physics*, wom är enkelt och lättviktigt, perfekt för mobila webbläsare.
+I koden kommer du att märka att vi måste starta fysiksystemet och sen behöver vi aktivera det för varje sprajt eller grupp som vi vill tillämpa fysik på.
 
-Once done the sprites gain a new body property, which is an instance of `ArcadePhysics.Body`. This represents the sprite as a physical body in Phaser's Arcade Physics engine. The body object has itself a lot of properties that we can play with. To simulate the effects of gravity on a sprite, it's as simple as writing this:
+När detta är gjort får sprajterna en ny egenskap, `body`, som är en instans av `ArcadePhysics.Body`. 
+Detta representerar sprajten som en fysikalisk kropp i Phasers *Archade Physics*-motor.
+Själva `body`-objektet har många egenskaper som vi kan leka med.
+För att simulera gravitationens inverkan på en sprajt är det helt enkelt bara att skriva så här:
 
 `player.body.gravity.y = 300;`
 
-This is an arbitrary value, but logically, the higher the value, the heavier your object feels and the quicker it falls. If you add this to your code or run `part5.js` you will see that the player falls down without stopping, completely ignoring the ground we created earlier:
+Detta (300) är ett godtyckligt värde, men logiskt nog ju högre värde, desto tyngre känns föremålet och det faller fortare.
+Om du lägger till detta i din kod eller kör `part5.js` 
+kommer du att se att spelaren faller neråt utan att stanna utan hänsyn till marken vi skapade tidigare:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part5.png)
 
