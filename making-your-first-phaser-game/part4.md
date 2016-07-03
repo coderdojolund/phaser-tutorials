@@ -4,19 +4,23 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-Grupper är mycket kraftfulla. Som namnet antyder låter de dig gruppera ihop liknande objekt och styra dem som en sammanhållen enhet.
-
-Groups are really powerful. As their name implies they allow you to group together similar objects and control them all as one single unit. You can also check for collision between Groups, and for this game we'll be using two different Groups, one of which is created in the code above for the platforms.
+Phaser-grupper är mycket kraftfulla. Som namnet antyder låter de dig gruppera ihop liknande objekt och styra dem som en sammanhållen enhet. Man kan också känna av kollisioner mellan grupper och i det här spelet ska vi använda två olika grupper; en av grupperna, `platforms`, skapade vi i del 3.
 
 `platforms = game.add.group();`
 
-As with sprites `game.add` creates our Group object. We assign it to a new local variable called `platforms`. Now created we can add objects to it. First up is the ground. This is positioned at the bottom of the game and uses the 'ground' image loaded earlier. The ground is scaled to fill the width of the game. Finally we set its `immovable` property to true. Had we not done this the ground would move when the player collides with it (more on this in the Physics section).
+Precis som med sprajtar skapar `game.add` vårt `Group`-objekt.
+Vi sparar den i en ny lokal variabel som heter `platforms`.
+När den skapats kan vi lägga till objekt i den.
+Först kommer marken.
+Den ligger längst ner på spelytan och använder `ground`-bilden som vi laddade innan.
+Marken skalas så att den fyller ut bredden på spelet.
+Till slut sätter vi markens `immovable-egenskap till `true`. Om vi inte hade gjort det skulle marken flytta sig när spelaren krockar med den; mer om detta i fysikavsnittet i nästa del.
 
-With the ground in place we create two smaller ledges to jump on to using the exact same technique as for the ground.
+Med marken på plats skapar vi två mindre hyllor som man kan hoppa till med exakt samma metod som för marken.
 
-### Ready Player One
+### Redo, spelare ett
 
-Create a new local variable called `player` and add the following code to the create function. You can see this in `part5.html`:
+Skapa en ny lokal variabel som heter `player` och lägg till den här koden i funktionen `create`. Du kan se det i `part5.js`:
 
 ```javascript
     // The player and its settings
