@@ -50,7 +50,6 @@ function create() {
     ledge = platforms.create(-150, 250, 'ground');
 
     ledge.body.immovable = true;
-
 }
 ```
 Om du kör det här, som finns i [part4.js](../phaser_tutorial_02/part4.js) i ZIP-filen som hör till handledningen, bör du se en mycket mer spelliknande scen:
