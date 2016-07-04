@@ -17,7 +17,7 @@ För att simulera gravitationens inverkan på en sprajt är det helt enkelt bara
 `player.body.gravity.y = 300;`
 
 Detta (300) är ett godtyckligt värde, men logiskt nog ju högre värde, desto tyngre känns föremålet och det faller fortare.
-Om du lägger till detta i din kod eller kör `part5.js` 
+Om du lägger till detta i din kod eller kör [part5.js](../phaser_tutorial_02/part5.js) 
 kommer du att se att spelaren faller neråt utan att stanna utan hänsyn till marken vi skapade tidigare:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part5.png)
@@ -25,10 +25,9 @@ kommer du att se att spelaren faller neråt utan att stanna utan hänsyn till ma
 Orsaken till det är att vi ännu inte känner av kollisioner mellan marken och spelaren.
 Vi har redan sagt åt Phaser att vår mark och avsatserna ska vara oflyttbara.
 Hade vi inte gjort det när spelaren krockade med dem så skulle den ha stannat ett ögonblick och sen skulle allting ha rasat.
-Detta eftersom marksprajten, om inget annat sagts, är ett rörligt fysiskt föremål (också kallat dynamisk kropp) och när spelaren träffar den så påverkar den resulterande kraften på marken; därför utbyter de kropparna rörelseenergi och marken börjar också att falla.
+Detta eftersom marksprajten, om inget annat sagts, är ett rörligt fysiskt föremål (också kallat dynamisk kropp) och när spelaren träffar den så verkar den resulterande kraften på marken; därför utbyter de kropparna rörelseenergi och marken börjar också att falla.
 
-Så för 
-So to allow the player to collide and take advantage of the physics properties we need to introduce a collision check in the update function:
+Så för låta spelaren kollidera och dra nytta av fysikegenskaperna behöver vi införa krockdetektering i `update`-funktionen:
 
 ```javascript
 function update() {
@@ -37,9 +36,12 @@ function update() {
 }
 ```
 
-The update function is called by the core game loop every frame. The Physics.collide function is the one that performs the magic. It takes two objects and tests for collision and performs separation against them. In this case we're giving it the player sprite and the platforms Group. It's clever enough to run collision against all Group members, so this one call will collide against the ground and both ledges. The result is a firm platform:
+Funktionen `update` anropas av spelets huvudloop varje ruta. Funktionen `Physics.collide` står för magin. 
+Den tar två föremål och upptäcker krockar och får dem att studsa. I det här fallet ger vi funktionen spelarens sprajt och gruppen `platforms`. `collide` är smart nog att upptäcka kollision med alla medlemmar i gruppen, så det här (enda) anropet sköter krockar med marken och båda avsatserna. Resultatet är en orörlig plattform:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part6.png)
+
+[Så här ser koden ut nu](../phaser_tutorial_02/part6.js).
 
 ## Vill du veta mer?
 * API-länkar kommer här
