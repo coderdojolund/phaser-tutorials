@@ -20,7 +20,7 @@ Med marken på plats skapar vi två mindre avsatser som man kan hoppa till, med 
 
 ### Redo, spelare ett
 
-Skapa en ny lokal variabel som heter `player` och lägg till den här koden i funktionen `create`. Du kan se koden i `part5.js`:
+Skapa en ny lokal variabel som heter `player` och lägg till den här koden i funktionen `create`. Du kan se koden i [part5.js](../phaser_tutorial_02/part5.js):
 
 ```javascript
     // The player and its settings
@@ -38,7 +38,7 @@ Skapa en ny lokal variabel som heter `player` och lägg till den här koden i fu
     player.animations.add('left', [0, 1, 2, 3], 10, true);
     player.animations.add('right', [5, 6, 7, 8], 10, true);
 ```
-Detta skapar en ny sprajt som heter `player` placerad 32x150 pixlar från spelets underkant.
+Detta skapar en ny sprajt som heter `player` placerad 32&times;150 pixlar från spelets underkant.
 Vi säger åt den att använda resursen `dude` som vi laddat innan.
 Om du går tillbaks och tittar på funktionen `preload` ser du att `dude` laddades som en sprajtkarta, inte som bild. 
 Detta eftersom den innehåller animeringsrutor.
