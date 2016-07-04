@@ -53,7 +53,7 @@ function create() {
 
 }
 ```
-Om du kör det här, som finns i `part4.html` i ZIP-filen som hör till handledningen, bör du se en mycket mer spelliknande scen:
+Om du kör det här, som finns i [part4.js](../phaser_tutorial_02/part4.js) i ZIP-filen som hör till handledningen, bör du se en mycket mer spelliknande scen:
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part4.png)
 
