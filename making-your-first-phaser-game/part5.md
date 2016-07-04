@@ -43,6 +43,8 @@ Den tar två föremål och upptäcker krockar och får dem att studsa. I det hä
 
 [Så här ser koden ut nu](../phaser_tutorial_02/part6.js).
 
+# [<< Tillbaka till del 4](part4.md) [&ndash; Fortsätt till del 6 >>](part6.md)
+
 ## Vill du veta mer?
 * API-länkar kommer här
 
