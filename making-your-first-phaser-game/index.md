@@ -49,7 +49,7 @@ Starta Brackets och öppna mappen *phaser_tutorial_02*.
 </html>
 ```
 
-Öppna nu [part1.js](../phaser_tutorial_02/part1.html) i Brackets. Kodstrukturen ser ut så här:
+Öppna nu [part1.js](../phaser_tutorial_02/part1.js) i Brackets. Kodstrukturen ser ut så här:
 ```javascript
 var game;
 
