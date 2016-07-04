@@ -29,6 +29,8 @@ Om du tar upp sidan i en webbläsare bör du nu se en svart skärm med en enda s
 
 Ordningen som elementen visas på skärmen är samma som ordningen som du skapar dem. Så om du vill lägga en bakgrund bakom stjärnsprajten behöver du försäkra dig om att den lades till som en sprajt först, före stjärnan.
 
+[Så här ser koden ut nu](../phaser_tutorial_02/part3.js).
+
 # [<< Tillbaka till del 1 ](index.md) [&ndash; Fortsätt till del 3 >>](part3.md)
 
 ## Vill du veta mer?
