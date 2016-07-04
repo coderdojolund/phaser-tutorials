@@ -28,7 +28,7 @@ Installera editorn Brackets. [Se beskrivningen här.](https://github.com/coderdo
 
 Starta Brackets och öppna mappen *phaser_tutorial_02*.
 
-Öppna sidan `part1.html` i Brackets så tar vi en närmare titt på koden. Filen innehåller lite vanlig HTML som läser in Phaser och vår kod i `part1.js`. 
+Öppna sidan [part1.html](../phaser_tutorial_02/part1.html) i Brackets så tar vi en närmare titt på koden. Filen innehåller lite vanlig HTML som läser in Phaser och vår kod i [part1.js](../phaser_tutorial_02/part1.js). 
 
 ```html
 <!doctype html> 
@@ -49,7 +49,7 @@ Starta Brackets och öppna mappen *phaser_tutorial_02*.
 </html>
 ```
 
-Öppna nu `part1.js` i Brackets. Kodstrukturen ser ut så här:
+Öppna nu [part1.js](../phaser_tutorial_02/part1.html) i Brackets. Kodstrukturen ser ut så här:
 ```javascript
 var game;
 
@@ -86,7 +86,7 @@ Försöker du köra koden så här långt kommer du att märka att inget händer
 
 ## `jslint` hjälper oss hitta fel i koden
 
-Om du försöker spara koden i Brackets, så märker du att det kommer ett fönster med varningar längst ner. Koden går att köra men vi kan få bort varningarna genom att lägga till det här högst upp i `part1.js`.
+Om du försöker spara koden i Brackets, så märker du att det kommer ett fönster med varningar längst ner. Koden går att köra men vi kan få bort varningarna genom att lägga till det här högst upp i [part1.js](../phaser_tutorial_02/part1.js).
 
 ```javascript
 /*global Phaser */
@@ -94,7 +94,7 @@ Om du försöker spara koden i Brackets, så märker du att det kommer ett föns
 'use strict';
 ```
 
-Spara `part1.js` igen och varningarna bör vara borta.
+Spara [part1.js](../phaser_tutorial_02/part1.js) igen och varningarna bör vara borta.
 
 # [Fortsätt till del 2 >>](part2.md)
 
