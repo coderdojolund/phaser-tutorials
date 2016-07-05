@@ -47,7 +47,7 @@ Varför inte lägga till några piggar som man måste undvika?
 Du kan skapa en ny `spikes`-grupp och känna av kollision med spelaren, men istället för att döda piggens sprajt så dödar du spelaren istället.
 Eller, för att få ett mindre våldsamt spel, kan du göra det till en löptävling och utmana spelaren att samla upp stjärnorna på kortast möjliga tid. Vi har skickat med några extra bildfiler i ZIP-filen för att inspirera dig. 
 
-Med hjälp av det du lärt dig i den här handledningen och de över 450 tillgängliga exemplen, bör du nu ha en stadig grund för ett kommande projekt. Men som alltid om du har frågor, behöver hjälp eller vill dela något du jobbat på så tveka inte att fråga om hjälp i forumet för Phaser.
+Med hjälp av det du lärt dig i den här handledningen och de över 450 tillgängliga exemplen, bör du nu ha en stabil grund för ett kommande projekt. Men som alltid om du har frågor, behöver hjälp eller vill dela något du jobbat på så tveka inte att fråga om hjälp i forumet för Phaser.
 
 # [<< Tillbaka till del 7](part7.md)
 
