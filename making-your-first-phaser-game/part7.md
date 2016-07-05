@@ -2,7 +2,7 @@
 
 *[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
-[YouTube-versionen hittar du här](http://youtube.com)
+[YouTube-versionen hittar du här](https://www.youtube.com/playlist?list=PL39Sm336N_h-I3mGTtj3q--BtLWpH13sa)
 
 Det är dags att ge vårt lilla spel ett syfte.
 Vi strör stjärnor på scenen och låter spelaren samla upp dem.
