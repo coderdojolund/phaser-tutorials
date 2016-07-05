@@ -61,13 +61,13 @@ Första delen är samma som stjärnsprajten som vi hade innan, men vi har istäl
 # [<< Tillbaka till del 2](part2.md) [&ndash; Fortsätt till del 4 >>](part4.md)
 
 ## Vill du veta mer?
-* [game.world.height](http://phaser.io/docs/2.5.0/Phaser.World.html#height)
-* [game.physics.startSystem](http://phaser.io/docs/2.5.0/Phaser.Physics.html#startSystem)
 * [game.add.group](http://phaser.io/docs/2.5.0/Phaser.World.html#add)
-* [platforms.enableBody](http://phaser.io/docs/2.5.0/Phaser.Group.html#enableBody)
-* [platforms.create](http://phaser.io/docs/2.5.0/Phaser.Group.html#create)
-* [platforms.scale.setTo](http://phaser.io/docs/2.5.0/Phaser.Group.html#scale)
+* [game.physics.startSystem](http://phaser.io/docs/2.5.0/Phaser.Physics.html#startSystem)
+* [game.world.height](http://phaser.io/docs/2.5.0/Phaser.World.html#height)
 * [platforms.body.immovable](http://phaser.io/docs/2.5.0/Phaser.Physics.Arcade.Body.html#immovable)
+* [platforms.create](http://phaser.io/docs/2.5.0/Phaser.Group.html#create)
+* [platforms.enableBody](http://phaser.io/docs/2.5.0/Phaser.Group.html#enableBody)
+* [platforms.scale.setTo](http://phaser.io/docs/2.5.0/Phaser.Group.html#scale)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
