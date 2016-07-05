@@ -17,3 +17,5 @@
 [Del 8. Finputsning](/making-your-first-phaser-game/part8.md)
 
 [*Engelska originalet*](http://phaser.io/tutorials/making-your-first-phaser-game)
+
+![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/tutorial_header.png)
