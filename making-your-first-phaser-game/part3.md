@@ -67,7 +67,7 @@ Första delen är samma som stjärnsprajten som vi hade innan, men vi har istäl
 * [platforms.enableBody](http://phaser.io/docs/2.5.0/Phaser.Group.html#enableBody)
 * [platforms.create](http://phaser.io/docs/2.5.0/Phaser.Group.html#create)
 * [platforms.scale.setTo](http://phaser.io/docs/2.5.0/Phaser.Group.html#scale)
-* [platforms.body.immovable](http://phaser.io/docs/2.4.4/Phaser.Physics.Arcade.Body.html#immovable)
+* [platforms.body.immovable](http://phaser.io/docs/2.5.0/Phaser.Physics.Arcade.Body.html#immovable)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
