@@ -14,6 +14,6 @@
 
 [Del 7. Stjärnljus](/making-your-first-phaser-game/part7.md)
 
-[Del 8. Vi lägger sista handen](/making-your-first-phaser-game/part8.md)
+[Del 8. Finputsning](/making-your-first-phaser-game/part8.md)
 
 [*Engelska originalet*](http://phaser.io/tutorials/making-your-first-phaser-game)
