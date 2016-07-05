@@ -34,8 +34,8 @@ Ordningen som elementen visas på skärmen är samma som ordningen som du skapar
 # [<< Tillbaka till del 1 ](index.md) [&ndash; Fortsätt till del 3 >>](part3.md)
 
 ## Vill du veta mer?
-* Mer om [`Phaser.Loader`](http://phaser.io/docs/2.5.0/Phaser.Loader.html).[`image`](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
-* [Mer om `Phaser.Loader.spritesheet` hittar du här](http://phaser.io/docs/2.5.0/Phaser.Loader.html#spritesheet)
+* [`Phaser.Loader.image`](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
+* [`Phaser.Loader.spritesheet`](http://phaser.io/docs/2.5.0/Phaser.Loader.html#spritesheet)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
