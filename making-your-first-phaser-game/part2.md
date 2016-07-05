@@ -2,7 +2,7 @@
 
 *[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
-[YouTube-versionen hittar du här](https://youtu.be/WnAUkNWk6ws)
+[YouTube-versionen hittar du här](https://www.youtube.com/playlist?list=PL39Sm336N_h-I3mGTtj3q--BtLWpH13sa)
 
 Nu laddar vi resurserna som behövs för vårt spel. Detta gör vi med anrop till `game.load` inuti en funktion som heter `preload`.
 Phaser letar automatiskt efter den här funktionen vid start och laddar allt som definieras i den.
