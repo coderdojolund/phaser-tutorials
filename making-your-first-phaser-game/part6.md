@@ -2,7 +2,7 @@
 
 *[Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index) av [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm) den 7 december 2013   [@photonstorm](https://twitter.com/photonstorm)*
 
-[YouTube-versionen hittar du här](http://youtube.com)
+[YouTube-versionen hittar du här](https://www.youtube.com/playlist?list=PL39Sm336N_h-I3mGTtj3q--BtLWpH13sa)
 
 Att kollidera är utmärkt och bra, men vi behöver verkligen få spelaren att röra sig.
 Du funderar kanske på att gå till dokumentationen och söka upp hur man lägger till en händelselyssnare, men det behövs inte här.
