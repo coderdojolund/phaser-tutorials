@@ -4,17 +4,20 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-It's time to give our little game a purpose. Let's drop a sprinkling of stars into the scene and allow the player to collect them. To achieve this we'll create a new Group called 'stars' and populate it. In our create function we add the following code (this can be seen in [part8.js](../phaser_tutorial_02/part8.js)):
+Det är dags att ge vårt lilla spel ett syfte.
+Vi strör stjärnor på scenen och låter spelaren samla upp dem.
+För att uppnå det behöver skapa en ny `Group` som heter `stars` och fylla den. I vår `create`-funktion lägger vi till följande kod; du kan se koden i [part8.js](../phaser_tutorial_02/part8.js)):
 
 ```javascript
-    stars = game.add.group();
+    var i, 
+        star = game.add.group();
 
     stars.enableBody = true;
 
     //  Here we'll create 12 of them evenly spaced apart
-    for (var i = 0; i < 12; i += 1) {
+    for (i = 0; i < 12; i += 1) {
         //  Create a star inside of the 'stars' group
-        var star = stars.create(i * 70, 0, 'star');
+        star = stars.create(i * 70, 0, 'star');
 
         //  Let gravity do its thing
         star.body.gravity.y = 6;
@@ -24,17 +27,22 @@ It's time to give our little game a purpose. Let's drop a sprinkling of stars in
     }
 ```
 
-The process is similar to when we created the platforms Group. Using a JavaScript 'for' loop we tell it to create 12 stars in our game. They have an x coordinate of `i * 70`, which means they will be evenly spaced out in the scene 70 pixels apart. As with the player we give them a gravity value so they'll fall down, and a bounce value so they'll bounce a little when they hit the platforms.
+Sättet är samma som när vi skapade `platforms`-gruppen. Med en `for`-loop i JavaScript ber vi den att skapa 12 stjärnor i vårt spel.
+De har X-koordinat `i * 70`, vilket betyder att de blir jämnt fördelade med 70 pixlar mellan.
+Precis som med spelaren ger vi dem ett gravitationsvärde så att de ramlar ner, och ett studsvärde så att de studsar lite när de träffar avsatserna.
 
-Bounce is a value between 0 (no bounce at all) and 1 (a full bounce). Ours will bounce somewhere between 0.7 and 0.9\. If we were to run the code like this the stars would fall through the bottom of the game. To stop that we need to check for their collision against the platforms in our update loop:
+Bounce (studs) är ett värde mellan 0 (ingen studs) och 1 (fullständig studs).
+Våra kommer att studsa någonstans mellan 0,7 och 0,9.
+Om vi skulle köra som den är nu så skulle stjärnorna falla igenom spelets underkant. För att hindra det behöver vi känna av kollision med `platforms` i vår `update`-slinga:
 
 `game.physics.arcade.collide(stars, platforms);`
 
-As well as doing this we will also check to see if the player overlaps with a star or not:
+Förutom att göra det ska vi också testa om spelaren överlappar en stjärna eller inte:
 
 `game.physics.arcade.overlap(player, stars, collectStar, null, this);`
 
-This tells Phaser to check for an overlap between the player and any star in the stars Group. If found then pass them to the 'collectStar' function:
+Detta ber Phaser att kolla överlapp mellan spelaren och någon av stjärnorna i gruppen `stars`.
+Om det är något överlapp så skicka vidare till funktionen `collectStar`:
 
 ```javascript
 function collectStar (player, star) {
@@ -43,7 +51,8 @@ function collectStar (player, star) {
 }
 ```
 
-Quite simply the star is killed, which removes it from display. Running the game now gives us a player that can dash about, jumping, bouncing off the platforms and collecting the stars that fall from above. Not bad for a few lines of hopefully mostly quite readable code :)
+Stjärnan dödas helt enkelt, vilket tar bort den från skärmen.
+Kör man spelet nu så har vi en spelare som kan skutta omkring, hoppa, studsa från avsatserna och samla stjärnorna som faller från ovan. Inte dåligt för få rader med förhoppningsvis ganska läslig kod.
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part8.png)
 
