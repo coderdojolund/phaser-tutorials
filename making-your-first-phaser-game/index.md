@@ -3,7 +3,7 @@
 [Engelskt original](http://phaser.io/tutorials/making-your-first-phaser-game/index):
 _By [Alvin Ourrad and Richard Davey](https://twitter.com/photonstorm)_ on 7th December 2013   [@photonstorm](https://twitter.com/photonstorm) 
 
-[YouTube-versionen hittar du här](http://youtu.be/hxWphJYSSr4?hd=1)
+[YouTube-versionen hittar du här](https://www.youtube.com/playlist?list=PL39Sm336N_h-I3mGTtj3q--BtLWpH13sa)
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/tutorial_header.png)
 
