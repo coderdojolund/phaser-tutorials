@@ -33,7 +33,7 @@ Precis som med spelaren ger vi dem ett gravitationsvärde så att de ramlar ner,
 
 Bounce (studs) är ett värde mellan 0 (ingen studs) och 1 (fullständig studs).
 Våra kommer att studsa någonstans mellan 0,7 och 0,9.
-Om vi skulle köra som den är nu så skulle stjärnorna falla igenom spelets underkant. För att hindra det behöver vi känna av kollision med `platforms` i vår `update`-slinga:
+Om vi skulle köra koden som den är nu så skulle stjärnorna falla igenom spelets underkant. *Testa gärna.* För att hindra det behöver vi känna av kollision med `platforms` i vår `update`-slinga:
 
 `game.physics.arcade.collide(stars, platforms);`
 
