@@ -6,7 +6,7 @@
 
 Det är dags att ge vårt lilla spel ett syfte.
 Vi strör stjärnor på scenen och låter spelaren samla upp dem.
-För att uppnå det behöver skapa en ny `Group` som heter `stars` och fylla den. I vår `create`-funktion lägger vi till följande kod; du kan se koden i [part8.js](../phaser_tutorial_02/part8.js)):
+För att uppnå det behöver skapa en ny `Group` som heter `stars` och fylla den. I vår `create`-funktion lägger vi till följande kod; du kan se koden i [part8.js](../phaser_tutorial_02/part8.js):
 
 ```javascript
     var i, 
@@ -27,8 +27,8 @@ För att uppnå det behöver skapa en ny `Group` som heter `stars` och fylla den
     }
 ```
 
-Sättet är samma som när vi skapade `platforms`-gruppen. Med en `for`-loop i JavaScript ber vi den att skapa 12 stjärnor i vårt spel.
-De har X-koordinat `i * 70`, vilket betyder att de blir jämnt fördelade med 70 pixlar mellan.
+Sättet är samma som när vi skapade `platforms`-gruppen. Med en `for`-slinga i JavaScript ber vi den att skapa 12 stjärnor i vårt spel.
+De har *x*-koordinat `i * 70`, vilket betyder att de blir jämnt fördelade med 70 pixlar mellan.
 Precis som med spelaren ger vi dem ett gravitationsvärde så att de ramlar ner, och ett studsvärde så att de studsar lite när de träffar avsatserna.
 
 Bounce (studs) är ett värde mellan 0 (ingen studs) och 1 (fullständig studs).
@@ -52,11 +52,9 @@ function collectStar (player, star) {
 ```
 
 Stjärnan dödas helt enkelt, vilket tar bort den från skärmen.
-Kör man spelet nu så har vi en spelare som kan skutta omkring, hoppa, studsa från avsatserna och samla stjärnorna som faller från ovan. Inte dåligt för få rader med förhoppningsvis ganska läslig kod.
+Kör man spelet nu så har vi en spelare som kan skutta omkring, hoppa, studsa från avsatserna och samla stjärnorna som faller från ovan. Inte så illa för få rader med förhoppningsvis ganska läslig kod.
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part8.png)
-
-[Så här ser koden ut nu](../phaser_tutorial_02/part8.js).
 
 # [<< Tillbaka till del 6](part6.md) [&ndash; Fortsätt till del 8 >>](part8.md)
 
