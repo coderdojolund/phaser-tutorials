@@ -4,18 +4,23 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-The final tweak we'll make is to add a score. To do this we'll make use of a Phaser.Text object. Here we create two new variables, one to hold the actual score and the text object itself:
+Vår slutjustering blir att lägga till poängräkning.
+För att göra det använder vi ett `Phaser.Text`-objekt.
+Här skapar vi två nya variabler, en för att spara aktuell poäng och en för själva textobjektet:
 
 ```javascript
-var score = 0;
-var scoreText;
+var score = 0,
+    scoreText;
 ```
 
-The scoreText is set-up in the create function:
+`scoreText` sätts upp i funktionen `create`:
 
 `scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });`
 
-16&times;16 is the coordinate to display the text at. 'score: 0' is the default string to display and the object that follows contains a font size and fill colour. By not specifying which font we'll actually use the browser will default, so on Windows it will be Arial. Next we need to modify the collectStar function so that when the player picks-up a star their score increases and the text is updated to reflect this:
+16&times;16 är koodinaterna där texten ska visas.
+`score: 0` är startvärdet som ska visas och objektet efter innehåller en teckensnittsstorlek och fyllnadsfärg.
+Genom att inte ange vilket teckensnitt vi vill använda så tar webbläsaren sitt standardteckensnitt, så på Windows blir det Arial.
+Sen behöver vi ändra funktionen `collectStar` så att poängen ökar och texten uppdateras när spelaren fångar en stjärna.
 
 ```javascript
 function collectStar (player, star) {
@@ -28,16 +33,21 @@ function collectStar (player, star) {
 }
 ```
 
-So 10 points are added for every star and the scoreText is updated to show this new total. If you run part9.html you will see the final game.
+Så 10 poäng läggs till för varje stjärna och `scoreText` uppdateras för att visa den nya summan. Om du kör `part9.html` ser du det färdiga spelet.
+
 [Så här ser koden ut nu](../phaser_tutorial_02/part9.js).
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part9.png)
 
-### Conclusion
+### Avslutning
 
-You have now learned how to create a sprite with physics properties, to control its motion and to make it interact with other objects in a small game world. There are lots more things you can do to enhance this, for example there is no sense of completion or jeopardy yet. Why not add some spikes you must avoid? You could create a new 'spikes' group and check for collision vs. the player, only instead of killing the spike sprite you kill the player instead. Or for a non-violent style game you could make it a speed-run and simply challenge them to collect the stars as quickly as possible. We've included a few extra graphics in the zip file to help inspire you.
+Du har nu lärt dig att skapa en sprajt med fysikegenskaper, att styra hur den rör sig och att få den att samverka med andra föremål i en liten spelvärld.
+Det finns många saker du kan göra för att förbättra spelet; till exempel finns det ingen känsla av att spela klart eller någon spänning så här långt.
+Varför inte lägga till några piggar som man måste undvika? 
+Du kan skapa en ny `spikes`-grupp och känna av kollision med spelaren, men istället för att döda piggens sprajt så dödar du spelaren istället.
+Eller, för att få ett mindre våldsamt spel, kan du göra det till en löptävling och utmana spelaren att samla upp stjärnorna på kortast möjliga tid. Vi har skickat med några extra bildfiler i ZIP-filen för att inspirera dig. 
 
-With the help of what you have learned in this tutorial and the 450+ examples available to you, you should now have a solid foundation for a future project. But as always if you have questions, need advice or want to share what you've been working on then feel free to ask for help in the Phaser forum.
+Med hjälp av det du lärt dig i den här handledningen och de över 450 tillgängliga exemplen, bör du nu ha en stadig grund för ett kommande projekt. Men som alltid om du har frågor, behöver hjälp eller vill dela något du jobbat på så tveka inte att fråga om hjälp i forumet för Phaser.
 
 # [<< Tillbaka till del 7](part7.md)
 
