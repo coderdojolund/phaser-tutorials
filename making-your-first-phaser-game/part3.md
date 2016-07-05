@@ -13,7 +13,7 @@ För enkelhets skull låter Phaser koordinaterna `0, 0` vara övre vänstra hör
 
 Världsklassen kommer man åt via `game.world` och den har många behändiga metoder och egenskaper som hjälper till att fördela ut dina objekt inuti världen. Den har några enkla egenskaper som `game.world.height` men också några mer avancerade som vi kommer att använda i en annan handledning.
 
-Men nu bygger vi upp scenen genom att lägga till en bakgrund och plattformar. Här är den uppdaterade `create`-funktionen.
+Men nu bygger vi upp scenen genom att lägga till en bakgrund och avsatser. Här är den uppdaterade `create`-funktionen.
 ```javascript
 var platforms;
 
