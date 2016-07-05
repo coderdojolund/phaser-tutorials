@@ -4,11 +4,14 @@
 
 [YouTube-versionen hittar du här](http://youtube.com)
 
-Colliding is all good and well, but we really need the player to move. You would probably think of heading to the documentation and searching about how to add an event listener, but that is not necessary here. Phaser has a built-in Keyboard manager and one of the benefits of using that is this handy little function:
+Att kollidera är utmärkt och bra, men vi behöver verkligen få spelaren att röra sig.
+Du funderar kanske på att gå till dokumentationen och söka upp hur man lägger till en händelselyssnare, men det behövs inte här.
+Phaser en inbyggd tangentbordshanterare (keyboard) och en av fördelarna med att använda den här behändiga lilla funktionen:
 
 `cursors = game.input.keyboard.createCursorKeys();`
 
-This populates the cursors object with four properties: up, down, left, right, that are all instances of Phaser.Key objects. Then all we need to do is poll these in our update loop:
+Den förser objektet `cursors` med fyra egenskaper: *up*, *down*, *left* och *right*, som alla är objekt av typen `Phaser.Key`.
+Sen är det bara bara att polla (läsa av) dem i vår `update`-loop:
 
 ```javascript
     //  Reset the players velocity (movement)
@@ -34,13 +37,28 @@ This populates the cursors object with four properties: up, down, left, right, t
     }
 ```
 
-Although we've added a lot of code it should all be pretty readable. The first thing we do is reset the horizontal velocity on the sprite. Then we check to see if the left cursor key is held down. If it is we apply a negative horizontal velocity and start the 'left' running animation. If they are holding down 'right' instead we literally do the opposite. By clearing the velocity and setting it in this manner, every frame, it creates a 'stop-start' style of movement.
+Fast vi lagt till mycket kod bör den vara ganska läsbar.
+Det första vi gör att att återställa sprajtens horisontella hastighet.
+Sen kollar vi om vänster markörknapp är nertryckt.
+Om den är det så sätter vi en negativ horisontell hastighet och startar löpanimeringen `left`.
+Om spelaren håller ner `right` istället gör vi bokstavligen motsatsen.
+Genom att återställa och sen sätta hastigheten på det här sättet, för varje ruta, skapar vi ett rörelsemönster av typen stanna/starta.
 
-The player sprite will move only when a key is held down and stop immediately they are not. Phaser also allows you to create more complex motions, with momentum and acceleration, but this gives us the effect we need for this game. The final part of the key check sets the frame to 4 if no keyis held down. Frame 4 in the sprite sheet is the one of the player looking at you, idle.
+Spelarsprajten kommer att röra sig bara när en knapp hålls nere och stanna meddetsamma när den släpps. 
+Phaser låter dig också skapa mer sammansatta rörelser med rörelsemängd och acceleration, men det vi gjort så här långt ger oss effekten vi behöver för det här spelet.
+Sista delen av knappkoden (else) sätter rutan till 4 om ingen knapp hålls nertryckt.
+Ruta 4 i sprajtkartan är den där spelaren ser på dig, stillastående.
 
-### Jump to it
+### Hoppa till den
 
-The final part of the code adds the ability to jump. The up cursor is our jump key and we test if that is down. However we also test if the player is touching the floor, otherwise they could jump while in mid-air. If both of these conditions are met we apply a vertical velocity of 350 px/sec sq. The player will fall to the ground automatically because of the gravity value we applied to it. With the controls in place we now have a game world we can explore. Load up [part7.js](../phaser_tutorial_02/part7.js) and have a play. Try tweaking values like the 350 for the jump to lower and higher values to see the effect it will have.
+Sista delen av koden lägger till möjligheten att hoppa.
+Uppåtpil är vår hoppknapp och vi kollar om den är nertryckt.
+Men vi kollar också om spelaren rör marken; annars skulle man kunna hoppa fast man är i luften.
+Om båda villkoren är uppfyllda så ger vi en vertikal acceleration på 350 pixlar per sekund i kvadrat.
+Spelaren kommer att ramla ner på marken automatiskt på grund av gravitationsvärdet som vi satte.
+Med kontrollerna på¨plats har vi nu en spelvärld som vi kan utforska.
+Ladda [part7.js](../phaser_tutorial_02/part7.js) och provspela.
+Pröva att ändra på värdena som t.ex. talet 350 för hoppet till mindre eller större värden för att se vad effekten blir.
 
 ![image](http://phaser.io/content/tutorials/making-your-first-phaser-game/part7.png)
 
