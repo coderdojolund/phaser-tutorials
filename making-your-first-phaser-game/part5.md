@@ -27,7 +27,7 @@ Vi har redan sagt åt Phaser att vår mark och avsatserna ska vara oflyttbara.
 Hade vi inte gjort det när spelaren krockade med dem så skulle den ha stannat ett ögonblick och sen skulle allting ha rasat.
 Detta eftersom marksprajten, om inget annat sagts, är ett rörligt fysiskt föremål (också kallat dynamisk kropp) och när spelaren träffar den så verkar den resulterande kraften på marken; därför utbyter de kropparna rörelseenergi och marken börjar också att falla.
 
-Så för låta spelaren kollidera och dra nytta av fysikegenskaperna behöver vi införa krockdetektering i `update`-funktionen:
+Så för att låta spelaren kollidera och dra nytta av fysikegenskaperna behöver vi införa krockdetektering i `update`-funktionen:
 
 ```javascript
 function update() {
