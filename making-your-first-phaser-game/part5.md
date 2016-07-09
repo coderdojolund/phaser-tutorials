@@ -6,7 +6,7 @@
 
 Phaser stödjer ett antal olika fysiksystem.
 Som standard ingår *Arcade Physics*, *Ninja Physics* and *P2.JS Full-Body Physics*.
-I den här handledningen kommer vi att använda systemet *Arcade Physics*, wom är enkelt och lättviktigt, perfekt för mobila webbläsare.
+I den här handledningen kommer vi att använda systemet *Arcade Physics*, som är enkelt och lättviktigt, perfekt för mobila webbläsare.
 I koden kommer du att märka att vi måste starta fysiksystemet och sen behöver vi aktivera det för varje sprajt eller grupp som vi vill tillämpa fysik på.
 
 När detta är gjort får sprajterna en ny egenskap, `body`, som är en instans av `ArcadePhysics.Body`. 
