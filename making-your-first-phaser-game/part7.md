@@ -20,7 +20,7 @@ För att uppnå det behöver skapa en ny `Group` som heter `stars` och fylla den
         star = stars.create(i * 70, 0, 'star');
 
         //  Let gravity do its thing
-        star.body.gravity.y = 6;
+        star.body.gravity.y = 300;
 
         //  This just gives each star a slightly random bounce value
         star.body.bounce.y = 0.7 + Math.random() * 0.2;
