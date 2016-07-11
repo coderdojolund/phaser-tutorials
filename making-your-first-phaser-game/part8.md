@@ -15,10 +15,10 @@ var score = 0,
 
 `scoreText` sätts upp i funktionen `create`:
 
-`scoreText = game.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });`
+`scoreText = game.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#000' });`
 
 16&times;16 är koodinaterna där texten ska visas.
-`score: 0` är startvärdet som ska visas och objektet efter innehåller en teckensnittsstorlek och fyllnadsfärg.
+`Score: 0` är startvärdet som ska visas och objektet efter innehåller en teckensnittsstorlek och fyllnadsfärg.
 Genom att inte ange vilket teckensnitt vi vill använda så tar webbläsaren sitt standardteckensnitt, så på Windows blir det Arial.
 Sen behöver vi ändra funktionen `collectStar` så att poängen ökar och texten uppdateras när spelaren fångar en stjärna.
 
