@@ -4,7 +4,7 @@
 
 [YouTube-versionen hittar du här](https://www.youtube.com/playlist?list=PL39Sm336N_h-I3mGTtj3q--BtLWpH13sa)
 
-Att kollidera är utmärkt och bra, men vi behöver verkligen få spelaren att röra sig.
+Att kollidera är gott och väl, men vi behöver verkligen få spelaren att röra sig.
 Du funderar kanske på att gå till dokumentationen och söka upp hur man lägger till en händelselyssnare, men det behövs inte här.
 Phaser har en inbyggd tangentbordshanterare, *keyboard*, och en av fördelarna med den är den här behändiga lilla funktionen:
 
