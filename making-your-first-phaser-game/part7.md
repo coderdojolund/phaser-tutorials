@@ -10,7 +10,7 @@ För att uppnå det behöver skapa en ny `Group` som heter `stars` och fylla den
 
 ```javascript
     var i, 
-        star = game.add.group();
+        stars = game.add.group();
 
     stars.enableBody = true;
 
