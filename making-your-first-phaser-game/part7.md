@@ -39,7 +39,7 @@ Om vi skulle köra koden som den är nu så skulle stjärnorna falla igenom spel
 
 Förutom att göra det ska vi också testa om spelaren överlappar en stjärna eller inte:
 
-`game.physics.arcade.overlap(player, stars, collectStar, null, this);`
+`game.physics.arcade.overlap(player, stars, collectStar, null);`
 
 Detta ber Phaser att kolla överlapp mellan spelaren och någon av stjärnorna i gruppen `stars`.
 Om det är något överlapp så skicka vidare till funktionen `collectStar`:
