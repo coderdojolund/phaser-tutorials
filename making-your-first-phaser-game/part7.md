@@ -59,7 +59,8 @@ Kör man spelet nu så har vi en spelare som kan skutta omkring, hoppa, studsa f
 # [<< Tillbaka till del 6](part6.md) [&ndash; Fortsätt till del 8 >>](part8.md)
 
 ## Vill du veta mer?
-* API-länkar kommer här
+* [`arcade.overlap`](http://phaser.io/docs/2.5.0/Phaser.Physics.Arcade.html#overlap)
+* [`star.kill`](http://phaser.io/docs/2.5.0/Phaser.Sprite.html#kill)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
