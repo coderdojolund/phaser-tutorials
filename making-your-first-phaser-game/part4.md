@@ -58,7 +58,8 @@ När vi satt animeringen skapar vi några fysikegenskaper.
 # [<< Tillbaka till del 3](part3.md) [&ndash; Fortsätt till del 5 >>](part5.md)
 
 ## Vill du veta mer?
-* API-länkar kommer här
+* [`body.bounce`, `body.gravity`, `collideworldbounds`](http://phaser.io/docs/2.5.0/Phaser.Physics.Arcade.Body.html)
+* [`animations.add`](http://phaser.io/docs/2.5.0/Phaser.Animation.html)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
