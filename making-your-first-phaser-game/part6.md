@@ -65,7 +65,7 @@ Pröva att ändra på värdena som t.ex. talet 350 för hoppet till mindre eller
 # [<< Tillbaka till del 5](part5.md) [&ndash; Fortsätt till del 7 >>](part7.md)
 
 ## Vill du veta mer?
-* API-länkar kommer här
+* [`game.input.keyboard.createCursorKeys`](http://phaser.io/docs/2.4.6/Phaser.Keyboard.html)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
