@@ -46,7 +46,8 @@ Den tar två föremål och upptäcker krockar och får dem att studsa. I det hä
 # [<< Tillbaka till del 4](part4.md) [&ndash; Fortsätt till del 6 >>](part6.md)
 
 ## Vill du veta mer?
-* API-länkar kommer här
+* [`game.physics.arcade.collide`](http://phaser.io/docs/2.5.0/Phaser.Physics.Arcade.html#collide)
+
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
