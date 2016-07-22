@@ -36,6 +36,7 @@ Ordningen som elementen visas på skärmen är samma som ordningen som du skapar
 ## Vill du veta mer?
 * [`Phaser.Loader.image`](http://phaser.io/docs/2.5.0/Phaser.Loader.html#image)
 * [`Phaser.Loader.spritesheet`](http://phaser.io/docs/2.5.0/Phaser.Loader.html#spritesheet)
+* [`Phaser.game.add`](http://phaser.io/docs/2.4.6/Phaser.Game.html#add)
 
 ## Referenser
 [Källkodsfiler i original](https://github.com/photonstorm/phaser/raw/master/resources/tutorials/02%20Making%20your%20first%20game/phaser_tutorial_02.zip)
